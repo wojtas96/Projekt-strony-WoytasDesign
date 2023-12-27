@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WoytasDesign-website</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Nawigacja / menu -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">WoytasDesign®</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="o-nas.html">O Nas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="baza-wiedzy.html">Baza wiedzy</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Usługi
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="project-websites.html">Projektowanie responsywnych stron
+                                    internetowych</a>
+                            </li>
+                            <li><a class="dropdown-item" href="e-commerce.html">E-commerce</a></li>
+                            <li><a class="dropdown-item" href="blogi-i-portale.html">Blogi i portale</a></li>
+                            <li><a class="dropdown-item" href="web-app.html">Aplikacje webowe</a></li>
+                            <li><a class="dropdown-item" href="mobil-app.html">Aplikacje mobilne: Android, IOS</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Konsulting IT</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="analiza-i-strategia.html">Analiza i strategia</a></li>
+                            <li><a class="dropdown-item" href="it-security.html">Bezpieczeństwo informatyczne</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Infrastruktura IT</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="chmura-danych.html">Systemy przetwarzania i składowania
+                                    danych</a></li>
+                            <li><a class="dropdown-item" href="backup.html">Backup i archiwizacja danych</a></li>
+                            <li><a class="dropdown-item" href="systemy-identyfikacji.html">Systemy automatycznej
+                                    identyfikacji RFID / OCR</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="kariera.html">Kariera</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontakt.html">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Slider -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/slider-1.jpg" class="d-block w-100" alt="View 1">
+                <div class="carousel-caption">
+                    <!-- d-md-block - opisy są widoczne dopiero w rozdzielczości medium, a chcę żeby były widoczne na każdej z rozdzielczości. -->
+                    <h2><b>Innowacyjne rozwiązania, gdzie niemożliwe staje się standardem</b></h2>
+                    <p>Dopasowane oprogramowanie na miarę Twoich wyzwań biznesowych</p>
+                    <a href="web-app.html" class="btn btn-primary">Dowiedz się więcej</a>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="img/slider-2.jpg" class="d-block w-100" alt="View 2">
+                <div class="carousel-caption">
+                    <h2><b>Kodowane z pasją - dostarczane z precyzją</b></h2>
+                    <p>Indywidualne podejście do wszystkich projektów</p>
+                    <div class="button-container">
+                        <a href="e-commerce.html" class="btn btn-primary">E-commerce</a>
+                        <a href="analiza-i-strategia.html" class="btn btn-primary">Integracja rozwiązań IT</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="img/slider-3.jpg" class="d-block w-100" alt="View 3">
+                <div class="carousel-caption">
+                    <h2><b>Aplikacje mobilne, które przeniosą Twój biznes na wyższy poziom</b></h2>
+                    <p>Rozwiń potencjał technologiczny w Twojej firmie i nie tylko...</p>
+                    <a href="mobil-app.html" class="btn btn-primary">Dowiedz się więcej</a>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="img/slider-4.jpg" class="d-block w-100" alt="View 4">
+                <div class="carousel-caption">
+                    <h2><b>Pełne bezpieczeństwo dla Twoich danych</b></h2>
+                    <p>Backup na platformie</p>
+                    <a href="backup.html" class="btn btn-primary">Przetestuj za darmo</a>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="img/slider-5.jpg" class="d-block w-100" alt="View 5">
+                <div class="carousel-caption">
+                    <h2><b>Wiedza techniczna w zasięgu kliknięcia - nasza baza wiedzy dla Ciebie</b></h2>
+                    <p>Obieg dokumentów, obsługa kadr, CRM a może raportowanie?</p>
+                    <a href="baza-wiedzy.html" class="btn btn-primary">Zamów demo</a>
+                </div>
+            </div>
+        </div>
+
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Menu poziome -->
+    <nav class="nav bg-light-white">
+        <a class="nav-link" href="analiza-i-strategia.html">Case study</a>
+        <a class="nav-link" href="https://spidersweb.pl/kategoria/nowe-technologie">Nowinki technologiczne</a>
+        <a class="nav-link" href="it-security.html">Konsulting IT</a>
+        <a class="nav-link" href="web-app.html">Oprogramowanie</a>
+        <a class="nav-link" href="systemy-identyfikacji.html">Infrastruktura IT</a>
+        <a class="nav-link" href="https://antyweb.pl/">Wiadomości i wydarzenia</a>
+        <br>
+        <br>
+    </nav>
+
+    <section id="showcase" class="showcase py-0 bg-light">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 showcase-img bg-img order-md-2" style="background-image: url('img/network.jpg');">
+                </div>
+                <div class="col-md-6 order-md-1 p-5">
+                    <h2>WoytasDesign został partnerem Zyxel Networks</h2>
+                    <p class="lead">Z przyjemnością ogłaszamy, że nasza firma nawiązała strategiczne partnerstwo z Zyxel
+                        Networks.
+                        To kluczowe porozumienie otwiera przed nami nowe perspektywy i rozszerza możliwości, które
+                        możemy oferować naszym klientom.
+                        Jest to również wyraz naszego głębokiego zaangażowania w dostarczanie najwyższej jakości
+                        rozwiązań dostępnych na rynku.
+                        Jesteśmy pewni, że dzięki temu partnerstwu z Zyxel Networks zaoferujemy naszym klientom jeszcze
+                        lepsze, innowacyjne i dostosowane do ich potrzeb rozwiązania.</p>
+                    <a href="o-nas.html" class="btn btn-primary">Czytaj więcej</a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 showcase-img bg-img"
+                    style="background-image: url('img/ekran-z-wykresem-z-napisem-finanse.jpg');"></div>
+                <div class="col-md-6 order-md-1 p-5">
+                    <h2>Poszerzamy swoje horyzonty...</h2>
+                    <p class="lead">
+                        Z dumą informujemy, że nasza firma WoytasDesign, niedawno ukończyła zaawansowane szkolenie z
+                        dziedziny Sztucznej Inteligencji (AI).
+                        To strategiczne poszerzenie naszych kompetencji umożliwia nam świadczenie jeszcze bardziej
+                        innowacyjnych i skutecznych rozwiązań dla naszych klientów.
+                        Wprowadzenie wiedzy z zakresu AI doskonali nasze zdolności projektowania, tworzenia
+                        oprogramowania i
+                        dostarczania usług,
+                        co stanowi kluczowy krok w kierunku przyszłości technologii informatycznych. Jesteśmy gotowi
+                        wykorzystać potencjał Sztucznej Inteligencji,
+                        aby sprostać wyzwaniom branżowym i dostarczyć rozwiązania, które przewyższają oczekiwania.</p>
+                    <a href="o-nas.html" class="btn btn-primary">Czytaj więcej</a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 showcase-img bg-img order-md-2" style="background-image: url('img/hosting.jpg');">
+                </div>
+                <div class="col-md-6 order-md-1 p-5">
+                    <h2>Hackathon i WoytasDesign 2023</h2>
+                    <p class="lead">WoytasDesign wzięła udział w prestiżowym Hackathonie 2023. Nasz zespół nie tylko
+                        podjął
+                        wyzwanie, ale również zaprezentował kreatywność,
+                        innowacyjność i zaangażowanie podczas intensywnego wydarzenia. Udział w Hackathonie dostarczył
+                        nam
+                        nie tylko cennego doświadczenia, ale także inspiracji
+                        do dalszego doskonalenia naszych rozwiązań w dziedzinie technologii informatycznych. Jesteśmy
+                        dumni
+                        z zaangażowania naszego zespołu i gotowi kontynuować
+                        naszą misję tworzenia nowatorskich rozwiązań dla naszych klientów.</p>
+                    <a href="o-nas.html" class="btn btn-primary">Czytaj więcej</a>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <a href="https://antyweb.pl/" class="btn btn-secondary">Lista aktualności</a>
+        <br>
+        <br>
+    </section>
+
+    <section id="company" class="company bg-dark">
+        <br>
+        <div class="container text-center">
+            <h2 class="mb-4">O WoytasDesign</h2>
+            <p>WoytasDesign to przestrzeń, w której kreujemy nie tylko projekty, ale także inspiracje. Jesteśmy zespołem
+                pasjonatów,
+                którzy łączą wizję z rzeczywistością, tworząc niepowtarzalne doświadczenia w dziedzinie designu.
+                Nasza misja to przekraczanie granic kreatywności, dostarczając rozwiązania, które nie tylko wyróżniają
+                się estetyką,
+                ale także odpowiadają na indywidualne potrzeby naszych klientów. Z WoytasDesign każdy projekt staje się
+                historią do opowiedzenia. </p>
+            <h4>Zarząd WoytasDesign Sp. z o.o.</h4>
+
+            <!-- Counters - numbers -->
+            <div id="counters-numbers" data-speed="4" data-type="background">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <hr class="divider-light">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-4 text-center">
+                            <div class="counters-box">
+                                <i class="fa fa-4x fa-solid fa-business-time" style="color: rgb(157, 255, 0)"></i>
+                                <h1 id="NumberUp1">5</h1>
+                                <h6>lat doświadczenia</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 text-center">
+                            <div class="counters-box">
+                                <i class="fa fa-4x fa-users wow bounceIn" style="color: rgb(157, 255, 0)"
+                                    data-wow-delay=".2s"></i>
+                                <h1 id="NumberUp2">5000</h1>
+                                <h6>Klientów</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 text-center">
+                            <div class="counters-box">
+                                <i class="fa fa-4x fa-solid fa-user-tie" style="color: rgb(157, 255, 0)"
+                                    data-wow-delay=".3s"></i>
+                                <h1 id="NumberUp3">500</h1>
+                                <h6>Pracowników</h6>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="o-nas.html" class="btn btn-secondary">Czytaj więcej</a>
+        <br>
+        <br>
+        <br>
+    </section>
+
+    <!-- USŁUGI WoytasDesign - opis strony głównej -->
+    <section id="technology" class="technology bg-light">
+        <br>
+        <h2>Zobacz, jak możemy Ci pomóc</h2>
+        <p>Codziennie pomagamy naszym klientom rozwijać prowadzony biznes dzięki cyfryzacji i nowoczesnym
+            technologiom:</p>
+        <br>
+
+        <div class="container container-tech">
+            <div class="row">
+                <div class="col-md-4">
+                    <nav class="nav-link dropdown mx-auto pb-4 bg-light">
+
+                        <img src="img/view-1.jpg" class="rounded-circle img-fluid mb-3">
+
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="true">Usługi</a>
+                        <nav class="dropdown-content">
+                            <a href="project-websites.html">Projektowanie responsywnych stron internetowych</a>
+                            <a href="e-commerce.html">E-commerce</a>
+                            <a href="blogi-i-portale.html">Blogi i portale</a>
+                            <a href="web-app.html">Aplikacje webowe</a>
+                            <a href="mobil-app.html">Aplikacje mobilne: Android, IOS</a>
+                        </nav>
+                    </nav>
+                </div>
+
+                <div class="col-md-4">
+                    <nav class="nav-link dropdown mx-auto pb-4 bg-light">
+
+                        <img src="img/view-2.jpg" class="rounded-circle img-fluid mb-3">
+
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="true">Konsulting IT</a>
+                        <nav class="dropdown-content">
+                            <a href="analiza-i-strategia.html">Analiza i strategia</a>
+                            <a href="it-security.html">Bezpieczeństwo informatyczne</a>
+                        </nav>
+                    </nav>
+                </div>
+
+                <div class="col-md-4">
+                    <nav class="nav-link dropdown mx-auto pb-4 bg-light">
+
+                        <img src="img/view-3.jpg" class="rounded-circle img-fluid mb-3">
+
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="true">Infrastruktura IT</a>
+                        <nav class="dropdown-content">
+                            <a href="chmura-danych.html">Systemy przetwarzania i składowania danych</a>
+                            <a href="backup.html">Backup i archiwizacja danych</a>
+                            <a href="systemy-identyfikacji.html">Systemy automatycznej identyfikacji RFID / OCR</a>
+                        </nav>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="t108-footer bg-dark">
+
+        <div class="footer-above">
+            <div class="container">
+                <div class="row col-12">
+
+                    <div class="footer-col col-md-3 col-sm-6"><br>
+                        <h4>Kontakt</h4>
+                        <div class="row">
+                            <div class="col-md-12 contact">
+                                <div class="col-xs-1"><i class="fa-solid fa-map-marker"
+                                        style="color: rgb(157, 255, 0)"></i></div>
+                                <div class="col-xs-10 pull-right">
+                                    <p>WoytasDesign Sp. z o.o.<br>Ul. Wójta Radtkego 49<br>81-355 Gdynia</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12 contact">
+                                <div class="col-xs-1"><i class="fa-solid fa-phone" style="color:rgb(157, 255, 0)"></i>
+                                </div>
+                                <div class="col-xs-10 pull-right">
+                                    <p>tel: +48 600 636 267 <br>
+                                        fax: +48 866 16 26</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12 contact">
+                                <div class="col-xs-1"><i class="fa-solid fa-envelope"
+                                        style="color: rgb(157, 255, 0)"></i></div>
+                                <div class="col-xs-10 pull-right"><a href="mailto:kwoytas08@gmail.com">
+                                        <p>woytasdesign@gmail.com</p>
+                                    </a></div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12 contact">
+                                <div class="col-xs-1"><i class="fa-solid fa-globe" style="color: rgb(157, 255, 0);"></i>
+                                </div>
+                                <div class="col-xs-10 pull-right"><a href="#">
+                                        <p>www.woytasdesign.pl</p>
+                                    </a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-col col-md-3 col-sm-6"><br>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4>Znajdziesz Nas tutaj...</h4><br>
+                                <a rel="noreferrer" aria-label="facebook"
+                                    href="https://www.facebook.com/klaudia.wojtasss0810" target="_blank"
+                                    style="color:rgb(157, 255, 0);"><i
+                                        class="fab fa-facebook-square fa-2xl"></i></a><br><br>
+                                <a rel="noreferrer" aria-label="LinkedIn"
+                                    href="https://www.linkedin.com/in/klaudia-wojtas-592479235/" target="_blank"
+                                    style="color:rgb(157, 255, 0);"><i class="fab fa-linkedin fa-2xl"></i></a><br><br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-col col-md-3 col-sm-6"><br>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4>Formularz RMA</h4>
+                                <p>Skorzystaj z systemu zgłoszeń serwisowych za pośrednictwem strony internetowej.
+                                    Zarejestruj zgłoszenie i śledź jego status.</p>
+                                <a class="btn btn-light" href="formularz-rma.html" target="blank">Przejdź
+                                    dalej</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-col col-md-3 col-sm-6"><br>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4>Na skróty</h4><br>
+                                <a class="btn btn-light" href="project-websites.html">Usługi</a><br><br>
+                                <a class="btn btn-light" href="it-security.html">Konsulting IT</a><br><br>
+                                <a class="btn btn-light" href="systemy-identyfikacji.html">Infrastruktura
+                                    IT</a><br><br>
+                                <a class="btn btn-light" href="web-app.html">Oprogramowanie</a><br><br>
+                                <a class="btn btn-light" href="https://spidersweb.pl/kategoria/nowe-technologie">Nowinki
+                                    technologiczne</a><br><br>
+                                <a class="btn btn-light"
+                                    href="https://lexdigital.pl/polityka-prywatnosci-wzor-zgodny-z-rodo">Polityka
+                                    prywatności</a><br><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer text-center">
+                <div class="container" style="color: #fff;">Copyright © 2023 WoytasDesign Sp. z o.o.
+                    Wszelkie prawa zastrzeżone.</div>
+            </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

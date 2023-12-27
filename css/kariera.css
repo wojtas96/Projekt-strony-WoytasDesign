@@ -1,0 +1,87 @@
+/* Kariera */
+body {
+    background-color: rgba(255, 255, 255, 0.785);
+}
+
+a.navbar-brand {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 40px;
+    color: rgb(51, 125, 161);
+    font-weight: bold;
+}
+
+a.navbar-brand:hover {
+    color: rgba(0, 0, 0, 0.736);
+}
+
+.btn-primary {
+    color:white;
+    background-color: rgb(51, 125, 161);
+    font-size: 15px;
+}
+
+.nav-link {
+    color: rgb(51, 125, 161);
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    text-transform: none;
+    font-size: 30px;
+}
+
+p {
+    font-size: 20px;
+    text-align: left;
+}
+
+h5 {
+    text-align: center;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+}
+
+.footer-above {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+
+/* RESPONSYWNOŚĆ STRON WG OKREŚLONYCH ROZDZIELCZOŚCI */
+
+/* Dla małych ekranów */
+@media screen and (max-width: 480px) {
+    
+    b {
+        font-size: 20px;
+    }
+
+    img {
+        height: 200px;
+    }
+
+    p {
+        font-size: 17px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .nav-link {
+        font-size: 17px;
+    }
+
+    .btn-light {
+        font-size: 15px;
+    }
+}

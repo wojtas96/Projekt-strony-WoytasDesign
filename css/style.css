@@ -1,0 +1,298 @@
+/* Strona główna WoytasDesign */
+body {
+    background-color: rgba(255, 255, 255, 0.785);
+}
+
+a.navbar-brand {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    color: rgb(51, 125, 161);
+    font-weight: bold;
+}
+
+a.navbar-brand:hover {
+    color: rgba(0, 0, 0, 0.736);
+}
+
+.btn-primary {
+    color: white;
+    background-color: rgb(51, 125, 161);
+    font-size: 15px;
+}
+
+.button-container {
+    display: flex;
+    gap: 20px;
+    /* odstęp między przyciskami */
+    justify-content: center;
+    /* wyśrodkowanie przycisków w poziomie */
+    margin-top: 10px;
+    /* odstęp od tekstu slajdu */
+}
+
+.btn-primary:hover {
+    background-color: rgba(0, 0, 0, 0.736);
+}
+
+.nav-link {
+    color: rgb(51, 125, 161);
+    font-size: 20px;
+}
+
+.nav-link:hover {
+    color: rgba(0, 0, 0, 0.736);
+}
+
+.bg-img {
+    display: block;
+    /*określa zachowanie wyświetlania (typ pola renderowania) elementu*/
+    background-position: center;
+    /*ustawia początkową pozycję obrazu tła względem krawędzi obszaru pozycjonowania*/
+    background-size: cover;
+    /*określa rozmiar obrazów tła*/
+    
+}
+
+.container {
+    color: #fff;
+}
+
+.btn-secondary {
+    font-size: 20px;
+    background-color: rgb(51, 125, 161);
+    position: relative;
+    /*określa typ metody pozycjonowania używanej dla elementu (static, relative, absolute, fixed lub sticky)*/
+    top: 50%;
+    /*odległość od górnej krawędzi elementu HTML*/
+    left: 25%;
+    /*definiuje odległość od lewej krawędzi elmentu zewnętrznego*/
+    width: 50%;
+    /*właściwość width określa szerokość elementu, szerokość elementu nie obejmuje dopełnienia, obramowań ani marginesów*/
+    align-items: center;
+    /*definiuje domyślne wyrównanie dla elementów wewnątrz elastycznego kontenera*/
+}
+
+.btn-secondary:hover {
+    background-color: rgba(0, 0, 0, 0.736);
+}
+
+p {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 25px;
+    text-transform: none;
+    /*kontroluje wielkość liter w tekście*/
+}
+
+.i {
+    align-items: center;
+    /*definiuje domyślne wyrównanie dla elementów wewnątrz elastycznego kontenera*/
+    color: #337da1;
+}
+
+#technology {
+    text-align: center;
+    /*definiuje poziome wyrównanie tekstu w elemencie HTML*/
+    color: rgb(0, 0, 0);
+}
+
+.container-tech {
+    color: rgb(0, 0, 0);
+}
+
+.dropdown {
+    position: relative;
+    /*position - metody pozycjonowania. relative - element zmienia pozycję, ale otaczające go elementy zachowują się tak, 
+    jakby element nadal tam był. Element jest pozycjonowany względnie w stosunku do jego określonej pozycji. 
+    Np.: left:20px dodaje 20 pikseli do normalnej pozycji elementu.*/
+    display: inline-block;
+    /*display - typ pola renderowania. inline-block - wyświetla element jako blokowo-liniowy. Sam element jest sformatowany jako element liniowy, 
+    ale możesz zastosować wartości wysokości (height) i szerokości (width).*/
+}
+
+.dropdown-content {
+    display: none;
+    /*none - element jest całkowicie usunięty*/
+    position: absolute;
+    /*absolute - Element jest pozycjonowany względem swojego pierwszego (nie statycznego) elementu nadrzędnego*/
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    /*box-shadow dołącza jeden lub kilka cieni do elementu*/
+    z-index: 1;
+    /*definiuje kolejność elementu na stosie. Element o większej liczbie zawsze znajduje się na stosie nad elementem o niższej liczbie.
+    Uwaga: z-index działa tylko na elementach pozycjonowanych (position: absolute, position: relative, position: fixed lub position: sticky)*/
+    text-align: center;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    /*odstęp wewnętrzny, między początkiem elementu, a jego treścią*/
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.fab {
+    display: inline;
+    text-decoration: none;
+}
+
+
+/* RESPONSYWNOŚĆ STRON WG OKREŚLONYCH ROZDZIELCZOŚCI */
+
+/* Dla małych ekranów */
+@media screen and (max-width: 480px) {
+
+    b {
+        font-size: 20px;
+    }
+
+    img {
+        height: 250px;
+        background-size: contain;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .btn-primary {
+        font-size: 10px;
+    }
+
+    .lead {
+        font-size: 15px;
+    }
+
+    .btn-secondary {
+        font-size: 14px;
+    }
+
+    .counters-box {
+        font-size: 10px;
+    }
+
+    .mb-4 {
+        font-size: 20px;
+    }
+
+    .nav-link {
+        font-size: 17px;
+    }
+
+    .btn-light {
+        font-size: 15px;
+    }
+}
+
+
+/* Dla średnich ekranów */
+@media screen and (max-width: 768px) {
+
+    b {
+        font-size: 20px;
+    }
+
+    .img {
+        height: auto;
+        background-size: contain;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .p {
+        font-size: 18px;
+    }
+    
+    .btn-primary {
+        font-size: 10px;
+    }
+
+    .lead {
+        font-size: 15px;
+    }
+
+    .btn-secondary {
+        font-size: 14px;
+    }
+
+    .counters-box {
+        font-size: 15px;
+    }
+
+    .mb-4 {
+        font-size: 25px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    .nav-link {
+        font-size: 17px;
+    }
+
+    .btn-light {
+        font-size: 15px;
+    }
+}
+
+
+/* Dla dużych ekranów */
+@media screen and (max-width: 1200px) {
+    
+    .navbar-brand {
+        font-size: 50px;
+    }
+
+    .img {
+        height: auto;
+        background-size: contain;
+    }
+
+    .btn-primary {
+        font-size: 10px;
+    }
+
+    .lead {
+        font-size: 15px;
+    }
+
+    .showcase-img {
+        height: auto;
+        background-size: cover;
+    }
+
+    .btn-secondary {
+        font-size: 14px;
+    }
+
+    .mb-4 {
+        font-size: 25px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    .nav-link {
+        font-size: 17px;
+    } 
+}
